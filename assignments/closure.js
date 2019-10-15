@@ -3,7 +3,28 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
+let World = 'World';
 
+const Europe = () => {
+  const EU = 'European Union';
+  console.log(`The governing body is the ${EU}`);
+
+  const UK = () => {
+    const parliament = 'Parliament';
+    console.log(`The governing body is the ${EU} and ${parliament}  `);
+
+    const county = () => {
+      // Overwriting queen var
+      // const queen = 'Local Queen';
+      const cambridge = 'Cambridgeshire county council';
+      console.log(`The governing body is the ${EU} and ${parliament} and ${cambridge}  `);
+    }
+    county();
+  }
+  UK();
+}
+
+Europe();
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
