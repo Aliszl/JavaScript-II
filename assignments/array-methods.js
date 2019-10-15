@@ -512,8 +512,19 @@ let runnersLargeSizeShirt = runners.filter((currentItem) =>{
     //   using one or many of the array methods listed above.
 
     // Problem 1
-    // Sort alphabetically by company name
+    // Sort alphabetically by last name
+    // let alphabetical = [];
 
+    // runners.forEach((currentItem) => {
+    //   runners.sort(function (a,b){
+    //     if(a.last_name < b.last_name) { return -1; }
+    //     if(a.last_name > b.last_name) { return 1; }
+    //     return 0;
+    //   });
+    //   alphabetical.push(currentItem.last_name);
+    // });
+    
+    // console.log(alphabetical);
 
     // Problem 2
 

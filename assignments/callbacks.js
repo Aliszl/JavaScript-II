@@ -51,7 +51,7 @@
   }
   console.log(sumNums(5,6,sum));
 
-  const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
+  const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum', 'Pencil', 'yo-yo'];
   
  
 // const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum', 'Pencil'];
@@ -98,4 +98,11 @@ function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+  return cb(array);
 }
+
+function removed(arr){
+  return[...new Set(arr)];
+};
+console.log(items);
+console.log(removeDuplicates(items, removed));
